@@ -1,0 +1,468 @@
+
+/*======================INIT============================*/
+html, body{
+	height: 100%;
+	width: 100%;
+}
+
+/*=====================ANIMATION========================*/
+
+.fade-in {
+	opacity: 0;
+}
+
+/*======================NAVBAR==========================*/
+#main-logo
+{
+	max-width: 270px;
+}
+.input-group
+{
+	width:500px;
+	min-width: 50px;
+	text-align:center;
+	margin:0 auto;
+}
+
+.rs-land-nav {
+	margin-bottom: 0;
+	background-color: #fff;
+	box-shadow: 0 0 10px #6f5499;  /* add a box shadow to the bottom border */
+	-moz-box-shadow: 0 0 10px #6f5499;
+	-webkit-box-shadow: 0 0 10px #6f5499;
+}
+
+.rs-land-nav .navbar-brand, .rs-land-nav .navbar-nav>li>a {
+	color: #563d7c;
+	font-weight: 500;
+}
+
+.rs-land-nav .navbar-nav>li>a:hover,.rs-land-nav .navbar-nav>.active>a,.rs-land-nav .navbar-nav>.active>a:hover
+{
+	color:#463265;
+	background-color:#f9f9f9
+}
+
+.rs-land-nav .navbar-header .navbar-toggle {
+	border-color: #fff;
+}
+
+.rs-land-nav .navbar-toggle .icon-bar {
+	background-color: #563d7c;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+	border-color: #fff; 
+}
+
+.rs-land-nav .navbar-header .navbar-toggle
+{
+	border-color:#fff
+}
+.rs-land-nav .navbar-header .navbar-toggle:hover,.rs-land-nav .navbar-header .navbar-toggle:focus
+{
+	background-color:#f9f9f9;
+	border-color:#f9f9f9
+}
+
+.rs-land-nav .navbar-brand, .rs-land-nav .navbar-nav>li>a {
+	color: #563d7c;
+	font-weight: 500;
+}
+
+
+/* add responsive css */
+
+.rs-land-masthead, .rs-land-header {
+	/* Internet Explorer 10 */
+	display:-ms-flexbox;
+	-ms-flex-align:center;
+	/* Safari, Opera, and Chrome */
+	display:-webkit-box;
+	-webkit-box-align:center;
+	/* W3C */
+	display:box;
+	box-pack:center;
+	box-align:center;
+
+	min-height: 500px; 
+	height: 100%;
+	color: #cdbfe3;
+	text-align: center;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #6f5499;
+	background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+	background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+}
+
+.rs-land-masthead .lead {
+	margin: 0 auto 30px;
+	font-size: 20px;
+	color: #fff;
+}
+
+/* add the hove ==> remove element*/
+/*.rs-land-masthead .btn {
+	/*width: 100%;
+	padding: 15px 30px;
+	font-size: 20px;
+}*/
+
+.rs-land-masthead .version {
+	/*margin-top: -15px;*/
+	margin-bottom: 30px;
+	color: #9783b9;
+}
+
+.rs-land-booticon-outline {
+	background-color: transparent;
+	border: 1px solid #cdbfe3;
+}
+
+.rs-land-booticon-lg {
+	width: 154px;
+	height: 144px;
+	font-size: 108px;
+	line-height: 140px;
+}
+
+.rs-land-booticon {
+	display: block;
+	font-weight: 500;
+	color: #fff;
+	background-color: #563d7c;
+	border-radius: 15%;
+	-moz-border-radius: 15%;
+	-webkit-border-radius: 15%;
+	cursor: default;
+	text-align: center;
+	/* ie fix */
+	-pie-lazy-init: true;
+	behavior: url("/css/PIE.htc");
+}
+
+/*==========================================*/
+.btn
+{
+	transition: color 500ms ease;
+	-webkit-transition: color 500ms ease;
+	-moz-transition: color 500ms ease;
+	-o-transition: color 500ms ease;
+	-ms-transition: color 500ms ease;
+}
+
+.btn-outline
+{
+	color:#563d7c;
+	background-color:transparent;
+	border-color:#563d7c;
+	transition: background-color 500ms ease;
+	-webkit-transition: background-color 500ms ease;
+	-moz-transition: background-color 500ms ease;
+	-o-transition: background-color 500ms ease;
+	-ms-transition: background-color 500ms ease;
+}
+.btn-outline:hover,.btn-outline:focus,.btn-outline:active
+{
+	color:#fff;
+	background-color:#563d7c;
+	border-color:#563d7c;
+}
+.btn-outline-inverse
+{
+	color:#fff;
+	background-color:transparent;
+	border-color:#cdbfe3;
+	transition: background-color 500ms ease;
+	-webkit-transition: background-color 500ms ease;
+	-moz-transition: background-color 500ms ease;
+	-o-transition: background-color 500ms ease;
+	-ms-transition: background-color 500ms ease;
+}
+.btn-outline-inverse:hover,.btn-outline-inverse:focus,.btn-outline-inverse:active
+{
+	color:#563d7c;
+	text-shadow:none;
+	background-color:#fff;
+	border-color:#ccc;
+	border-left-width:0;
+}
+
+/* ================================================*/
+/* MARKETING ======================================*/
+
+.rs-land-featurette {
+	padding-top: 40px;
+	padding-bottom: 40px;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #555;
+	text-align: center;
+	background-color: #fff;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.rs-land-featurette-title {
+	font-size: 30px;
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.half-rule {
+	width: 100px;
+	margin: 40px auto;
+}
+
+
+.rs-land-featurette h3 {
+	font-weight: 400;
+	color: #333;
+	margin-bottom: 5px;
+}
+
+.rs-land-featurette+.rs-land-footer {
+	margin-top: 0;
+	border-top: 0;
+}
+
+/* ==================================================== */
+/* FOOTER ============================================= */
+.rs-land-footer {
+	bottom: 0;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	margin-top: 100px;
+	color: #777;
+	text-align: center;
+	border-top: 1px solid #e5e5e5;
+	color: #cdbfe3;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+	background-color: #6f5499;
+	background-image: -webkit-linear-gradient(top,#563d7c 0,#6f5499 100%);
+	background-image: linear-gradient(to bottom,#563d7c 0,#6f5499 100%);
+	background-repeat: repeat-x;
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#563d7c', endColorstr='#6F5499', GradientType=0);
+}
+
+.rs-land-footer  a {
+	text-decoration: none;
+	color: #cdbfe3;
+	text-shadow: 0 1px 0 rgba(0,0,0,.1);
+}
+
+.rs-land-footer .social-circle  a {
+	display: inline-block;
+	position: relative;
+	margin: 0 5px;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	text-align: center;
+	width: 50px;
+	height: 50px;
+	font-size: 20px;
+	/* ie fix */
+	-pie-lazy-init: true;
+	behavior: url("/css/PIE.htc");
+}
+
+.rs-land-footer .social-circle a:hover i {
+	-moz-transform: rotate(360deg);
+	-webkit-transform: rotate(360deg);
+	-ms--transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.rs-land-footer .social-circle i {
+	color: #fff;
+	-webkit-transition: all 0.8s;
+	-moz-transition: all 0.8s;
+	-o-transition: all 0.8s;
+	-ms-transition: all 0.8s;
+	transition: all 0.8s;
+}
+
+
+/* ============================================== */
+/* TOP MENU LOGIN FORM ========================== */
+
+.rs-land-login-box{
+	padding: 17px;
+
+}
+.rs-land-login-box form i {
+	color: #ccc;
+	display: block!important;
+	font-size: 16px;
+	height: 16px;
+	margin: 9px 2px 4px 10px;
+	position: absolute!important;
+	text-align: center;
+	width: 16px;
+	z-index: 1;
+}
+
+.rs-land-login-box .form-control input {
+	background: none repeat scroll 0 0 #fff;
+	font-size: 15px;
+	padding: 10px 8px 8px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	box-shadow: none;
+	width: 100%;
+	min-width: 0;
+	padding-left: 33px!important;
+}
+
+.rs-land-login-box .checkbox {
+	margin: 0 auto;
+	width: 10em;
+}
+
+.rs-land-login-box .form-actions {
+	background-color:#f5f5f5;
+	border-top:1px solid #e5e5e5;
+	padding:10px 10px;
+}
+
+.form-icon-control {
+	padding-left: 32px;
+}
+
+/* ============================================== */
+/* RESPONSIVE RULES ============================= */
+
+@media (min-width: 768px)
+{
+	.rs-land-masthead h1
+	{
+		font-size: 60px;
+	}
+	.bs-brand-item h1
+	{
+		font-size: 60px;
+	}
+	.rs-land-masthead .lead
+	{
+		font-size:30px;
+	}
+}
+
+@media (max-width:768px)
+{
+	#main-logo
+	{
+		width: 50%;
+	}
+	.input-group
+	{
+		width: 80%;
+	}
+	.rs-land-masthead
+	{
+		padding-top:80px;
+		padding-bottom:80px;
+	}
+	.rs-land-masthead .lead
+	{
+		font-size:24px;
+	}
+	.rs-land-footer p
+	{
+		margin-bottom:0;
+	}
+	.rs-land-featurette
+	{
+		padding-top:100px;
+		padding-bottom:100px;
+	}
+	.rs-land-featurette-title
+	{
+		font-size:40px;
+	}
+	.rs-land-featurette .lead
+	{
+		margin-left:auto;
+		margin-right:auto;
+		max-width:80%;
+	}
+	.rs-land-featured-sites .col-sm-3:first-child img
+	{
+		border-top-left-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+	.rs-land-featured-sites .col-sm-3:last-child img
+	{
+		border-top-right-radius: 4px;
+		border-bottom-right-radius: 4px;
+	}
+
+	.bs-brand-item
+	{
+		display: table-cell;
+		width: 1%;
+	}
+	.bs-brand-item+.bs-brand-item
+	{
+		border-top: 0;
+		border-left: 1px solid #fff;
+	}
+}
+
+@media (max-width:480px)
+{
+	#main-logo
+	{
+		width: 80%;
+	}
+	.input-group
+	{
+		width: 100%;
+	}
+	.rs-land-masthead .btn
+	{
+		width: auto;
+	}
+	.rs-land-featurette .img-responsive
+	{
+		margin-top: 30px;
+	}
+
+}
+
+/****************************************************************/
+/*	 Errors */
+
+.page-error .error-number {
+display: block;
+font-size: 158px;
+font-weight: 300;
+letter-spacing: -10px;
+line-height: 128px;
+margin-top: 0;
+text-align: center;
+color: #6f5499;
+}
+
+.page-error .error-details {
+display: block;
+padding-top: 0;
+text-align: center;
+}
+
+body.error-full-page .page-error {
+margin-top: 60px;
+}
+
+body.error-full-page {
+overflow: hidden;
+}

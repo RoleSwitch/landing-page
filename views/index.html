@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="google-site-verification" content="EFZqPBCnmeIX6EaSoPSU14pO3RschCILBaWGl8eUJ6Q" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="description" content="Social platform to create contact between the right people, in the right time.">
+    <meta name="keywords" content="chat,social,roleswitch,role,switch">
+    <meta name="author" content="jackred and khocef">
+    <title>RoleSwitch</title>
+    {% if env === "development" -%}
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/jquery.growl.css" rel="stylesheet" />
+      <link href="css/style.css" rel="stylesheet">
+    {% else -%}
+      <link href="css/styles.css" rel="stylesheet">
+    {%- endif %}
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-48637309-1', 'roleswitch.com');
+    ga('send', 'pageview');
+    </script>
+  </head>
+  <body style="padding-top: 50px;">
+    <!-- navbar-inverse navbar-static-top -->
+    <div class="navbar navbar-default navbar-fixed-top rs-land-nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img src="img/logo_header.png" height="50px" class="img-responsive" style="max-width: 130px;"></a>
+        </div>
+        <nav class="collapse navbar-collapse rs-navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown" id="menuLogin">
+              <a class="dropdown-toggle" href="#" data-toggle="dropdown" id="navLogin">{{ __('login') }}</a>
+              <div class="dropdown-menu rs-land-login-box">
+                <form role="form" method="POST" id="loginForm">
+                  <div class="form-group">
+                    <i class="fa fa-envelope"></i>
+                    <input type="email" class="form-control form-icon-control" name="email" required>
+                  </div>
+                  <div class="form-group">
+                    <i class="fa fa-lock"></i>
+                    <input type="password" class="form-control form-icon-control" name="password" required>
+                  </div>
+                  <div class="form-actions">
+                    <button type="submit" class="btn btn-block btn-danger">{{ __('login') }}</button>
+                    <label class="checkbox">
+                      <input type="checkbox" value="" name="remember">{{ __('rememberme') }}
+                    </label>
+                  </div>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <main class="rs-land-masthead" id="content" role="main">
+    <div class="container">
+      <img src="img/logo.png" alt="RoleSwitch" id="main-logo">
+      <p class="lead">{{ __('header') }}</p>
+      <form role="form" method="POST" id="joinForm">
+        <div class="input-group">
+          <input class="form-control input-lg" title="{{ __('join input message') }}" placeholder="{{ __('email required') }}"  type="email" name="email" id="joinInput" required>
+          <span class="input-group-btn">
+          <input type="submit" class="btn btn-outline-inverse btn-lg" style="height: 46px;" value="{{ __('join') }}">
+          </span>
+        </div>
+      </form>
+    </div>
+    </main>
+    <div class="rs-land-featurette">
+      <div class="container">
+        <h2 class="rs-land-featurette-title">{{ __('featurette title') }}</h2>
+        <p class="lead">{{ __('featurette content') }}</p>
+        <hr class="half-rule">
+        <div class="row">
+          <div class="col-sm-4">
+            <img src="img/1.jpg" alt="Switch" class="img-responsive center-block fade-in">
+            <h3>{{ __('featurette one title') }}</h3>
+            <p>{{ __('featurette one content') }}</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/2.jpg" alt="Speak" class="img-responsive center-block fade-in">
+            <h3>{{ __('featurette two title') }}</h3>
+            <p>{{ __('featurette two content') }}</p>
+          </div>
+          <div class="col-sm-4">
+            <img src="img/3.jpg" alt="Reply" class="img-responsive center-block fade-in">
+            <h3>{{ __('featurette three title') }}</h3>
+            <p>{{ __('featurette three content') }}</p>
+          </div>
+        </div>
+        <hr class="half-rule">
+        <p class="lead">{{ __('featurette footer') }}</p>
+        <button class="btn btn-outline btn-lg scrollToTop">{{ __('featurette get started') }}</button>
+      </div>
+    </div>
+    <footer class="rs-land-footer" role="contentinfo">
+      <div class="container">
+        <p class="copyright small">
+        Copyright © <a href="http://roleswitch.com"> <img src="img/logo_footer.png"> RoleSwitch</a> Inc. 2014 - {{ __('copyrights') }}
+        </p>
+        <div class="social-circle center">
+          <a class="btn btn-primary btn-lg" href="https://www.facebook.com/roleswitch" target="blank">
+          <i class="fa fa-facebook"></i>
+          </a>
+          <a class="btn btn-danger btn-lg" href="https://www.google.com/+Roleswitch" target="blank">
+          <i class="fa fa-google-plus"></i>
+          </a>
+          <a class="btn btn-info btn-lg" href="https://www.twitter.com/roleswitch" target="blank">
+          <i class="fa fa-twitter"></i>
+          </a>
+          <a class="btn btn-danger btn-lg" href="https://www.youtube.com/user/roleswitch" target="blank">
+          <i class="fa fa-youtube"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts -->
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/bootstrap.min.js"></script>
+    <script src="js/lib/require.js" data-main="js/landing"></script>
+  </body>
+</html>
